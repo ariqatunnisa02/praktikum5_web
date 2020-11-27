@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>	
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Picker</title>
+        <style>
+            body{
+                background-color:pink;
+            }
+        </style>
+    </head>
+        <body style="margin: 200px"> 	<center>		
+            <h1> Image Picker </h1>
+            <h3 style="color:navy;"> Kafe Sweet </h3>
+            <select onchange="gantigambar();" id="listgambar">			
+                <option value="makanan.jpg">PILIH MAKANAN</option>			
+                <option value="choco.jpg">chocolate cake</option>			
+                <option value="mocca cake.jpg">mocca cake</option>			
+                <option value="Rainbow.jpg">rainbow cake</option>			
+                <option value="strawberry.jpg">strawberry cake</option>	
+                <option value="cheese.jpg">cheese cake</option>		
+            </select>	</center>		
+            <br/>	
+            <img src="cafe.jpg" style="width: 100%" id="gambar">
+         </body>
+         <script type="text/javascript">	
+         function gantigambar()
+          {		
+              let gambar = document.getElementById("listgambar").value;		
+              document.getElementById("gambar").src = gambar;		
+              alert("Ini Gambar " + gambar);	  
+            }
+        </script>
+</html>
